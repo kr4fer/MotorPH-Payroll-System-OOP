@@ -21,17 +21,6 @@ Group 28 – Terminal Assessment </p>
 
 <hr>
 
-<h3>🚀 Key System Enhancements</h3>
-<p>The following updates focus on <strong>Data Integrity</strong> and <strong>Defensive Programming</strong> to ensure the system handles financial data accurately and securely:</p>
-<ul>
-<li><strong>Strict Numeric Filtering:</strong> Implemented a <code>DocumentFilter</code> that blocks alphabetic characters in real-time for Salary and Government ID fields.</li>
-<li><strong>7-Digit Employee ID Cap:</strong> The system now strictly enforces a 7-character limit for Employee Numbers to maintain database consistency.</li>
-<li><strong>Automated Currency Formatting:</strong> Using a <code>FocusListener</code>, the system automatically formats raw numbers into currency strings (e.g., <code>25,500.00</code>) once the user finishes typing.</li>
-<li><strong>CSV Data Sanitization:</strong> The application "cleans" user input by stripping commas before saving to the CSV, ensuring compatibility with the <code>SalaryComputationPipeline</code>.</li>
-</ul>
-
-<hr>
-
 <h3>🔐 Access Credentials (UAT & Testing)</h3>
 <p>For testing and evaluation purposes, the following accounts are pre-configured to demonstrate Role-Based Access Control (RBAC):</p>
 
@@ -72,6 +61,17 @@ Group 28 – Terminal Assessment </p>
 </tbody>
 </table>
 <p><em>Example Employee Login: un: <code>10001</code> | pw: <code>Garcia</code></em></p>
+
+<hr>
+
+<h3>🚀 Key System Enhancements</h3>
+<p>The following updates focus on <strong>Data Integrity</strong> and <strong>Defensive Programming</strong> to ensure the system handles financial data accurately and securely:</p>
+<ul>
+<li><strong>Strict Numeric Filtering:</strong> Implemented a <code>DocumentFilter</code> that blocks alphabetic characters in real-time for Salary and Government ID fields.</li>
+<li><strong>7-Digit Employee ID Cap:</strong> The system now strictly enforces a 7-character limit for Employee Numbers to maintain database consistency.</li>
+<li><strong>Automated Currency Formatting:</strong> Using a <code>FocusListener</code>, the system automatically formats raw numbers into currency strings (e.g., <code>25,500.00</code>) once the user finishes typing.</li>
+<li><strong>CSV Data Sanitization:</strong> The application "cleans" user input by stripping commas before saving to the CSV, ensuring compatibility with the <code>SalaryComputationPipeline</code>.</li>
+</ul>
 
 <hr>
 
