@@ -1,37 +1,32 @@
-<h1> 📄 MotorPH Payroll System - TA Additional Update</h1>
+<h1>📄 MotorPH Payroll System - Foxtrot Version</h1>
+<p><strong>Course: MO-IT110 – Object-Oriented Programming</strong>
+
+
+Group 28 – Milestone 2 Implementation Package</p>
+
+<hr>
+
+<h3>🛠 Project Overview</h3>
+<p>MotorPH Payroll System is a Java-based desktop application designed to streamline employee management, attendance tracking, and payroll processing. The <strong>Foxtrot Version</strong> introduces a robust layered architecture, role-based access control, and an integrated IT support ticketing system.</p>
+<p>This project was developed as a major requirement for the <strong>Object-Oriented Programming (MO-IT110)</strong> subject, demonstrating the practical application of software design patterns and lifecycle management.</p>
 
 <hr>
 
 <h3>🚀 Key System Enhancements</h3>
-
-<p>The following updates focus on <strong>Data Integrity</strong> and <strong>Defensive Programming</strong> to ensure the system handles financial data accurately and securely.</p>
-
+<p>The following updates focus on <strong>Data Integrity</strong> and <strong>Defensive Programming</strong> to ensure the system handles financial data accurately and securely:</p>
 <ul>
-<li>
-<strong>Strict Numeric Filtering:</strong>
-Implemented a <code>DocumentFilter</code> that blocks alphabetic characters in real-time for Salary and Government ID fields.
-</li>
-<li>
-<strong>7-Digit Employee ID Cap:</strong>
-The system now strictly enforces a 7-character limit for Employee Numbers to maintain database consistency.
-</li>
-<li>
-<strong>Automated Currency Formatting:</strong>
-Using a <code>FocusListener</code>, the system automatically formats raw numbers into currency strings (e.g., <code>25,500.00</code>) once the user finishes typing.
-</li>
-<li>
-<strong>CSV Data Sanitization:</strong>
-The application "cleans" user input by stripping commas before saving to the CSV, ensuring compatibility with the <code>SalaryComputationPipeline</code>.
-</li>
+<li><strong>Strict Numeric Filtering:</strong> Implemented a <code>DocumentFilter</code> that blocks alphabetic characters in real-time for Salary and Government ID fields.</li>
+<li><strong>7-Digit Employee ID Cap:</strong> The system now strictly enforces a 7-character limit for Employee Numbers to maintain database consistency.</li>
+<li><strong>Automated Currency Formatting:</strong> Using a <code>FocusListener</code>, the system automatically formats raw numbers into currency strings (e.g., <code>25,500.00</code>) once the user finishes typing.</li>
+<li><strong>CSV Data Sanitization:</strong> The application "cleans" user input by stripping commas before saving to the CSV, ensuring compatibility with the <code>SalaryComputationPipeline</code>.</li>
 </ul>
 
 <hr>
 
 <h3>🛠️ Feature Implementation Details</h3>
-
-<table border="1">
+<table border="1" cellpadding="5" cellspacing="0">
 <thead>
-<tr>
+<tr style="background-color: #f2f2f2;">
 <th>Field Category</th>
 <th>Constraint / Logic</th>
 <th>Validation Tool</th>
@@ -46,7 +41,7 @@ The application "cleans" user input by stripping commas before saving to the CSV
 <tr>
 <td><strong>Basic Salary</strong></td>
 <td>Numbers + One Decimal + Auto-Commas</td>
-<td><code>MoneyDocumentFilter</code> & <code>FocusListener</code></td>
+<td><code>MoneyDocumentFilter</code> &amp; <code>FocusListener</code></td>
 </tr>
 <tr>
 <td><strong>Government IDs</strong></td>
@@ -57,3 +52,54 @@ The application "cleans" user input by stripping commas before saving to the CSV
 </table>
 
 <hr>
+
+<h3>👥 The Developers (Group 28)</h3>
+<ul>
+<li><strong>Anton Roger Galfo</strong> – Service &amp; DAO Layer, Authentication Logic, RBAC</li>
+<li><strong>Sunny Eljohn Lico</strong> – System Architecture, IT Support &amp; Ticket Management</li>
+<li><strong>Carl Justine Pontanilla</strong> – Employee Management, Salary Computation Pipeline</li>
+<li><strong>Isidro Romano</strong> – Quality Assurance, Smoke Testing, &amp; Documentation</li>
+</ul>
+
+<hr>
+
+<h3>✨ Key Features</h3>
+<ul>
+<li><strong>Role-Based Access Control (RBAC):</strong> Distinct dashboards for Staff (Admin/HR) and regular Employees.</li>
+<li><strong>Payroll Engine:</strong> Automated calculation of Gross Pay, Deductions (SSS, PhilHealth, Pag-IBIG, Tax), and Net Pay.</li>
+<li><strong>Attendance Management:</strong> Comprehensive tracking and filtering of employee work hours.</li>
+<li><strong>IT Support Module:</strong> A built-in ticketing system using UUIDs for tracking technical issues.</li>
+<li><strong>Security:</strong> Account lockout mechanism (60-second cooldown after 3 failed login attempts).</li>
+</ul>
+
+<hr>
+
+<h3>🏗 OOP Principles Applied</h3>
+<ul>
+<li><strong>Inheritance &amp; Abstraction:</strong> Used an abstract <code>Employee</code> class and <code>RegularEmployee</code> subclass to share core logic.</li>
+<li><strong>Interfaces:</strong> Implemented the <code>IPayable</code> interface to ensure a standardized contract for all salary-related computations.</li>
+<li><strong>Encapsulation:</strong> All model attributes are kept private and accessed via strict Getters and Setters.</li>
+<li><strong>Polymorphism:</strong> Utilized polymorphic methods in the GUI to handle different employee types during computation.</li>
+</ul>
+
+<hr>
+
+<h3>📂 Project Structure (Layered Architecture)</h3>
+<ul>
+<li><code>gui</code>: Handles the Swing-based user interface and event listeners.</li>
+<li><code>service</code>: Contains business logic for payroll, leaves, and attendance.</li>
+<li><code>dao</code>: Handles all file I/O operations with CSV data sources.</li>
+<li><code>model</code>: Defines the core objects (Employee, Ticket, Deduction, etc.).</li>
+</ul>
+
+<hr>
+
+<h3>🚀 Getting Started</h3>
+<ol>
+<li><strong>Prerequisites:</strong> Ensure you have Java JDK 11 or higher installed.</li>
+<li><strong>Clone the Repo:</strong>
+
+
+<code>git clone -b MotorPH_Payroll-Foxtrot-Version https://github.com/siejeihyung/MotorPH_OOP-Group-28.git</code>
+</li>
+</ol>
