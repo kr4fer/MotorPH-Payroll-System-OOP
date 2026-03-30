@@ -2,13 +2,22 @@
 <p><strong>Course: MO-IT110 – Object-Oriented Programming</strong>
 
 
-Group 28 – Milestone 2 Implementation Package</p>
+Group 28 – Terminal Assessment </p>
+
+<hr>
+
+<h3>👥 The Developers (Group 28)</h3>
+<ul>
+<li><strong>Anton Roger Galfo</strong> – Service &amp; DAO Layer, Authentication Logic, RBAC</li>
+<li><strong>Sunny Eljohn Lico</strong> – System Architecture, IT Support &amp; Ticket Management</li>
+<li><strong>Carl Justine Pontanilla</strong> – Employee Management, Salary Computation Pipeline</li>
+<li><strong>Isidro Romano</strong> – Quality Assurance, Smoke Testing, &amp; Documentation</li>
+</ul>
 
 <hr>
 
 <h3>🛠 Project Overview</h3>
 <p>MotorPH Payroll System is a Java-based desktop application designed to streamline employee management, attendance tracking, and payroll processing. The <strong>Foxtrot Version</strong> introduces a robust layered architecture, role-based access control, and an integrated IT support ticketing system.</p>
-<p>This project was developed as a major requirement for the <strong>Object-Oriented Programming (MO-IT110)</strong> subject, demonstrating the practical application of software design patterns and lifecycle management.</p>
 
 <hr>
 
@@ -20,6 +29,49 @@ Group 28 – Milestone 2 Implementation Package</p>
 <li><strong>Automated Currency Formatting:</strong> Using a <code>FocusListener</code>, the system automatically formats raw numbers into currency strings (e.g., <code>25,500.00</code>) once the user finishes typing.</li>
 <li><strong>CSV Data Sanitization:</strong> The application "cleans" user input by stripping commas before saving to the CSV, ensuring compatibility with the <code>SalaryComputationPipeline</code>.</li>
 </ul>
+
+<hr>
+
+<h3>🔐 Access Credentials (UAT & Testing)</h3>
+<p>For testing and evaluation purposes, the following accounts are pre-configured to demonstrate Role-Based Access Control (RBAC):</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<thead>
+<tr style="background-color: #f2f2f2;">
+<th>Role</th>
+<th>Username (un)</th>
+<th>Password (pw)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>System Admin</strong></td>
+<td><code>admin</code></td>
+<td><code>1234</code></td>
+</tr>
+<tr>
+<td><strong>Human Resources</strong></td>
+<td><code>hr</code></td>
+<td><code>hr123</code></td>
+</tr>
+<tr>
+<td><strong>Finance</strong></td>
+<td><code>finance</code></td>
+<td><code>finance123</code></td>
+</tr>
+<tr>
+<td><strong>IT Specialist</strong></td>
+<td><code>it_support</code></td>
+<td><code>support123</code></td>
+</tr>
+<tr>
+<td><strong>Regular Employee</strong></td>
+<td><code>[Employee ID #]</code></td>
+<td><code>[Last Name]</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>Example Employee Login: un: <code>10001</code> | pw: <code>Garcia</code></em></p>
 
 <hr>
 
@@ -53,19 +105,9 @@ Group 28 – Milestone 2 Implementation Package</p>
 
 <hr>
 
-<h3>👥 The Developers (Group 28)</h3>
-<ul>
-<li><strong>Anton Roger Galfo</strong> – Service &amp; DAO Layer, Authentication Logic, RBAC</li>
-<li><strong>Sunny Eljohn Lico</strong> – System Architecture, IT Support &amp; Ticket Management</li>
-<li><strong>Carl Justine Pontanilla</strong> – Employee Management, Salary Computation Pipeline</li>
-<li><strong>Isidro Romano</strong> – Quality Assurance, Smoke Testing, &amp; Documentation</li>
-</ul>
-
-<hr>
-
 <h3>✨ Key Features</h3>
 <ul>
-<li><strong>Role-Based Access Control (RBAC):</strong> Distinct dashboards for Staff (Admin/HR) and regular Employees.</li>
+<li><strong>Role-Based Access Control (RBAC):</strong> Distinct dashboards for Staff (Admin/HR/Finance/IT) and regular Employees.</li>
 <li><strong>Payroll Engine:</strong> Automated calculation of Gross Pay, Deductions (SSS, PhilHealth, Pag-IBIG, Tax), and Net Pay.</li>
 <li><strong>Attendance Management:</strong> Comprehensive tracking and filtering of employee work hours.</li>
 <li><strong>IT Support Module:</strong> A built-in ticketing system using UUIDs for tracking technical issues.</li>
